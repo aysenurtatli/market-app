@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Çikolata",
+      "price": "25",
+      "description": "çikolata",
+      "stock": "55"
+    },
+    {
+      "id": "2",
+      "name": "Gofret",
+      "price": "40",
+      "description": "gofret",
+      "stock": "20"
+    },
+    {
+      "id": "3",
+      "name": "Peynir",
+      "price": "500",
+      "description": "peynir",
+      "stock": "10"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@example.com",
+      "password": "1234"
+    }
+  ]
+}
