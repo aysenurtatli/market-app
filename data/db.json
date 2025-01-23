@@ -27,6 +27,13 @@
       "price": "45",
       "description": "süt",
       "stock": "30"
+    },
+    {
+      "id": "5",
+      "name": "ekmek",
+      "price": "10",
+      "description": "ekmek",
+      "stock": "100"
     }
   ],
   "users": [
@@ -38,9 +45,17 @@
   ],
   "sales": [
     {
-      "id": "5317",
-      "date": "2025-01-23T09:57:36.250Z",
+      "id": "56b2",
+      "date": "2025-01-23T15:08:20.019Z",
       "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": "55",
+          "quantity": 1
+        },
         {
           "id": "2",
           "name": "Gofret",
@@ -48,34 +63,6 @@
           "description": "gofret",
           "stock": "20",
           "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "9bee",
-      "date": "2025-01-23T10:04:36.767Z",
-      "products": [
-        {
-          "id": "2",
-          "name": "Gofret",
-          "price": "40",
-          "description": "gofret",
-          "stock": "20",
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "562e",
-      "date": "2025-01-23T10:05:09.603Z",
-      "products": [
-        {
-          "id": "2",
-          "name": "Gofret",
-          "price": "40",
-          "description": "gofret",
-          "stock": "20",
-          "quantity": 2
         },
         {
           "id": "3",
@@ -84,6 +71,82 @@
           "description": "peynir",
           "stock": "10",
           "quantity": 1
+        },
+        {
+          "id": "4",
+          "name": "Süt",
+          "price": "45",
+          "description": "süt",
+          "stock": "30",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "1083",
+      "date": "2025-01-23T15:09:35.620Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": "55",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Gofret",
+          "price": "40",
+          "description": "gofret",
+          "stock": "20",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Peynir",
+          "price": "500",
+          "description": "peynir",
+          "stock": "10",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "71ac",
+      "date": "2025-01-23T15:39:05.747Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": "55",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Gofret",
+          "price": "40",
+          "description": "gofret",
+          "stock": "20",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Peynir",
+          "price": "500",
+          "description": "peynir",
+          "stock": "10",
+          "quantity": 1
+        },
+        {
+          "id": "4",
+          "name": "Süt",
+          "price": "45",
+          "description": "süt",
+          "stock": "30",
+          "quantity": 3
         }
       ]
     }

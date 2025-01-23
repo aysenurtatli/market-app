@@ -6,6 +6,7 @@ import Checkout from '../components/Checkout';
 import { addToCheckout } from '../redux/app/features/checkoutSlice';
 
 function Home() {
+    const [notFound, setNotFound] = useState('');
     const dispatch = useDispatch();
     const [idSearch, setIdSearch] = useState('')
     const { products } = useSelector((state) => state.products)
@@ -20,17 +21,26 @@ function Home() {
             if (foundProduct) {
                 dispatch(addToCheckout(foundProduct));
                 setIdSearch('');
+                setNotFound('')
             } else {
-                console.log('Product not found')
+                setNotFound('Product Not Found')
+                setTimeout(() => {
+                    setNotFound('')
+                }, 3000)
+
             }
         }
     }
 
 
+
     return (
-        <div className='container m-auto flex justify-between'>
-            <div>
+        <div className='container m-auto flex justify-between h-screen'>
+            <div className='my-40'>
                 <input type="text" className='border border-zinc-200 w-[500px] h-[100px] mt-2 rounded-md focus:outline-none p-2 text-3xl' value={idSearch} onChange={handleInputChange} onKeyDown={handleKeyDown} />
+                {notFound && (
+                    <div className="bg-white h-[100px] flex items-center justify-center text-red-500 font-bold rounded-md text-4xl my-6">{notFound}</div>
+                )}
             </div>
             <Checkout />
         </div>

@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const completeSale = createAsyncThunk('checkout/completeSale', async (checkoutProducts, thunkAPI) => {
     return axios.post('http://localhost:3000/sales', {
-        date: new Date().toISOString(),
+        date: new Date(),
         products: checkoutProducts,
     })
         .then((response) => {
@@ -32,6 +32,17 @@ const checkoutSlice = createSlice({
             }
 
         }
+    },
+    extraReducers: (builder) => {
+        builder
+            .addCase(completeSale.fulfilled, (state, action) => {
+                console.log('completed', action.payload)
+                state.sales.push(action.payload)
+                state.checkoutProducts = [];
+            })
+            .addCase(completeSale.rejected, (state, action) => {
+                console.error(action.payload)
+            })
     }
 })
 

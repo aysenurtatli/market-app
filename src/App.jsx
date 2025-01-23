@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route path='/login' element={<LoginPage />} />
         <Route path='/' element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
-        <Route path='/sales' element={<Sales/>}></Route>
+        <Route path='/sales' element={isLoggedIn ? <Sales /> : <Navigate to="/login" />}></Route>
         <Route path='/products' element={isLoggedIn ? <ProductPage /> : <Navigate to="/login" />} />
         <Route path='/addproduct' element={isLoggedIn ? <AddProduct /> : <Navigate to="/login" />} />
       </Routes>
