@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import ProductPage from './pages/ProductPage'
 import AddProduct from './pages/AddProduct'
 import Home from './pages/Home'
+import Sales from './pages/Sales'
 import { login } from './redux/app/features/loginSlice'
 import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path='/login' element={<LoginPage />} />
         <Route path='/' element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
+        <Route path='/sales' element={<Sales/>}></Route>
         <Route path='/products' element={isLoggedIn ? <ProductPage /> : <Navigate to="/login" />} />
         <Route path='/addproduct' element={isLoggedIn ? <AddProduct /> : <Navigate to="/login" />} />
       </Routes>

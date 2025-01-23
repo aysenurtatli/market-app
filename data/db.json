@@ -20,6 +20,13 @@
       "price": "500",
       "description": "peynir",
       "stock": "10"
+    },
+    {
+      "id": "4",
+      "name": "Süt",
+      "price": "45",
+      "description": "süt",
+      "stock": "30"
     }
   ],
   "users": [
@@ -27,6 +34,58 @@
       "id": "1",
       "email": "admin@example.com",
       "password": "1234"
+    }
+  ],
+  "sales": [
+    {
+      "id": "5317",
+      "date": "2025-01-23T09:57:36.250Z",
+      "products": [
+        {
+          "id": "2",
+          "name": "Gofret",
+          "price": "40",
+          "description": "gofret",
+          "stock": "20",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "9bee",
+      "date": "2025-01-23T10:04:36.767Z",
+      "products": [
+        {
+          "id": "2",
+          "name": "Gofret",
+          "price": "40",
+          "description": "gofret",
+          "stock": "20",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "562e",
+      "date": "2025-01-23T10:05:09.603Z",
+      "products": [
+        {
+          "id": "2",
+          "name": "Gofret",
+          "price": "40",
+          "description": "gofret",
+          "stock": "20",
+          "quantity": 2
+        },
+        {
+          "id": "3",
+          "name": "Peynir",
+          "price": "500",
+          "description": "peynir",
+          "stock": "10",
+          "quantity": 1
+        }
+      ]
     }
   ]
 }

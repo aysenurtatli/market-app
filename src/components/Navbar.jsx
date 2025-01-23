@@ -18,6 +18,7 @@ function Navbar() {
                     <Link to="/">Home</Link>
                     <Link to="/products">Products</Link>
                     <Link to="/addproduct">Add Product</Link>
+                    <Link to="/sales">Sales</Link>
                     <button onClick={handleLogout} className='bg-blue-600 rounded-md w-16 text-white'>Logout</button>
                 </div>
             </nav>
