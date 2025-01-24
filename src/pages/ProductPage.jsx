@@ -23,14 +23,14 @@ function ProductPage() {
                 <h1 className='text-4xl font-bold my-10 text-slate-400'>Products</h1>
                 <ul className='flex flex-wrap gap-5 justify-center '>
                     {products?.map(product => (
-                        <li key={product.id} className='bg-slate-800 p-5 rounded shadow-md w-[300px]'>
-                            <h3 className='text-lg text-white font-semibold'>{product.name}</h3>
+                        <li key={product.id} className='bg-zinc-100 p-5 rounded shadow-md w-[300px]'>
+                            <h3 className='text-zinc-700 text-2xl font-semibold'>{product.name}</h3>
                             <Barcode value={product.id}></Barcode>
-                            <p className='text-md text-slate-400'>{product.description}</p>
-                            <p className='text-lg text-slate-400'>{product.stock}</p>
+                            <p className='text-lg'>{product.description}</p>
+                            <p className='text-lg'>Stock: {product.stock}</p>
                             <div className='flex justify-between'>
-                                <p className='text-xl font-semibold  bg-green-900 text-green-400 w-[120px] h-10 flex items-center px-2 rounded-sm'>Price: {product.price}₺</p>
-                                <div className='text-white flex items-center justify-center bg-slate-700 w-[50px] h-10 cursor-pointer rounded-md hover:bg-slate-900 duration-200' onClick={() => handleDelete(product.id)}><IoClose /></div>
+                                <p className='text-xl font-semibold  bg-green-400 text-green-900  h-10 flex items-center px-2 rounded-sm'>Price: {product.price}₺</p>
+                                <div className='text-white flex items-center justify-center bg-zinc-300 w-[50px] h-10 cursor-pointer rounded-md hover:bg-zinc-400 duration-200' onClick={() => handleDelete(product.id)}><IoClose /></div>
                             </div>
                         </li>
                     ))}

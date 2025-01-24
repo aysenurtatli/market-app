@@ -26,7 +26,7 @@ function AddProduct() {
 
     return (
         <div className='container m-auto h-[90vh] flex items-center justify-center'>
-            <div className='shadow-md w-[450px] p-6 bg-slate-800 text-white rounded-md'>
+            <div className='shadow-md w-[450px] p-6 bg-zinc-100 rounded-md'>
                 <h1 className='my-4 font-bold text-xl'>Add Product</h1>
                 <form onSubmit={handleSubmit}>
                     <div className='flex justify-between'>
@@ -36,7 +36,7 @@ function AddProduct() {
                                 type="text"
                                 id='name'
                                 value={name}
-                                className='my-4 w-full p-2 focus:outline-none border-zinc-100 rounded-md  bg-slate-900'
+                                className='my-4 w-full p-2 focus:outline-none border-zinc-100 rounded-md'
                                 onChange={(e) => setName(e.target.value)} />
                         </div>
                         <div>
@@ -45,7 +45,7 @@ function AddProduct() {
                                 type="number"
                                 id='price'
                                 value={price}
-                                className=' my-4 w-full p-2 focus:outline-none border-zinc-100 rounded-md bg-slate-900'
+                                className=' my-4 w-full p-2 focus:outline-none border-zinc-100 rounded-md'
                                 onChange={(e) => setPrice(e.target.value)} />
                         </div>
                     </div>
@@ -55,7 +55,7 @@ function AddProduct() {
                             type="number"
                             id='stock'
                             value={stock}
-                            className=' my-4 w-full p-2 focus:outline-none border-zinc-100 rounded-md bg-slate-900'
+                            className=' my-4 w-full p-2 focus:outline-none border-zinc-100 rounded-md'
                             onChange={(e) => setStock(e.target.value)}
                         />
                     </div>
@@ -64,7 +64,7 @@ function AddProduct() {
                         <textarea
                             id="description"
                             value={description}
-                            className='my-4 w-full h-20 p-2 focus:outline-none border-zinc-100 rounded-md  bg-slate-900'
+                            className='my-4 w-full h-20 p-2 focus:outline-none border-zinc-100 rounded-md'
                             onChange={(e) => setDescription(e.target.value)}></textarea>
                     </div>
                     <button type='submit' className='bg-green-400 text-slate-800 w-full my-4 rounded-md p-2'>Add</button>

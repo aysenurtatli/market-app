@@ -20,26 +20,26 @@ function Checkout() {
     }
 
     return (
-        <div className='text-white my-40 bg-slate-900 w-[500px] p-5 rounded-md'>
-            <h2 className='text-4xl'>Checkout</h2>
+        <div className='my-40 shadow-md bg-zinc-100 w-[500px] p-5 rounded-md'>
+            <h2 className='text-4xl text-blue-600'>Checkout</h2>
             {checkoutProducts.length > 0 ? (
-                <div className='my-4 text-white'>
+                <div className='my-4 text-zinc-800'>
                     {checkoutProducts.map((product) => (
                         <div key={product.id}>
-                            <div className='flex gap-2 bg-slate-900 my-4 p-2 relative'>
+                            <div className='flex gap-2 my-4 p-2'>
                                 <h2 className='text-3xl'>{product.name}</h2>
-                                <p className='text-3xl'>{product.price} TL</p>
+                                <p className='text-3xl'>{product.price} ₺</p>
                                 <div className='flex items-center justify-center'>
-                                    <IoClose />
-                                    <span>{product.quantity}</span>
+                                    <IoClose size="30px" />
+                                    <span className='text-2xl'>{product.quantity}</span>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
-            ) : (<p className='text-white text-2xl'>Empty</p>)}
-            <p className='text-2xl'>{totalPrice.toFixed(2)}</p>
-            <button onClick={handleCompleteSale} className='bg-green-800 w-full h-10 rounded-sm text-2xl mt-10'>Sale</button>
+            ) : (<p className='text-2xl'>Empty</p>)}
+            <p className='text-2xl'>{totalPrice.toFixed(2)} ₺</p>
+            <button onClick={handleCompleteSale} className='bg-green-500 text-white w-full h-10 rounded-sm text-2xl mt-10'>Sale</button>
         </div>
     )
 }
