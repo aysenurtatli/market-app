@@ -29,7 +29,7 @@ function AddProduct() {
             <div className='shadow-md w-[450px] p-6 bg-zinc-100 rounded-md'>
                 <h1 className='my-4 font-bold text-xl'>Add Product</h1>
                 <form onSubmit={handleSubmit}>
-                    <div className='flex justify-between'>
+                    <div className='flex justify-between gap-3'>
                         <div>
                             <label htmlFor="name" className='block'>Name:</label>
                             <input

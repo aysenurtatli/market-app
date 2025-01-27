@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
-import Barcode from 'react-barcode';
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Checkout from '../components/Checkout';
 import { addToCheckout } from '../redux/app/features/checkoutSlice';
@@ -35,7 +33,7 @@ function Home() {
 
 
     return (
-        <div className='container m-auto flex justify-between h-screen'>
+        <div className='container m-auto flex justify-between '>
             <div className='my-40'>
                 <h2 className='text-3xl text-zinc-600'>Barcode</h2>
                 <input type="text" className=' shadow-md bg-zinc-100 w-[500px] h-[100px] mt-2 rounded-md focus:outline-none p-2 text-3xl' value={idSearch} onChange={handleInputChange} onKeyDown={handleKeyDown} />

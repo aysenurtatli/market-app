@@ -5,7 +5,7 @@
       "name": "Çikolata",
       "price": "25",
       "description": "çikolata",
-      "stock": "55"
+      "stock": 52
     },
     {
       "id": "2",
@@ -33,14 +33,21 @@
       "name": "ekmek",
       "price": "10",
       "description": "ekmek",
-      "stock": "100"
+      "stock": 98
     },
     {
       "id": "6",
       "name": "Yumurta",
       "price": "150",
       "description": "beyaz yumurta",
-      "stock": "50"
+      "stock": 49
+    },
+    {
+      "id": "7",
+      "name": "Sucuk",
+      "price": "400",
+      "description": "sucuk",
+      "stock": 39
     }
   ],
   "users": [
@@ -198,6 +205,132 @@
           "description": "çikolata",
           "stock": "55",
           "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "e0af",
+      "date": "2025-01-27T06:58:31.500Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": "55",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Gofret",
+          "price": "40",
+          "description": "gofret",
+          "stock": "20",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Peynir",
+          "price": "500",
+          "description": "peynir",
+          "stock": "10",
+          "quantity": 1
+        },
+        {
+          "id": "4",
+          "name": "Süt",
+          "price": "45",
+          "description": "süt",
+          "stock": "30",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "ekmek",
+          "price": "10",
+          "description": "ekmek",
+          "stock": "100",
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "Yumurta",
+          "price": "150",
+          "description": "beyaz yumurta",
+          "stock": "50",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "ffab",
+      "date": "2025-01-27T07:02:02.704Z",
+      "products": [
+        {
+          "id": "5",
+          "name": "ekmek",
+          "price": "10",
+          "description": "ekmek",
+          "stock": "100",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "e256",
+      "date": "2025-01-27T07:08:22.344Z",
+      "products": [
+        {
+          "id": "8",
+          "name": "Sakız",
+          "price": "15",
+          "description": "sakız",
+          "stock": "60",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "710a",
+      "date": "2025-01-27T07:18:10.869Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": "55",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "b1f3",
+      "date": "2025-01-27T07:51:24.997Z",
+      "products": [
+        {
+          "id": "7",
+          "name": "Sucuk",
+          "price": "400",
+          "description": "sucuk",
+          "stock": "40",
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "Yumurta",
+          "price": "150",
+          "description": "beyaz yumurta",
+          "stock": "50",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "ekmek",
+          "price": "10",
+          "description": "ekmek",
+          "stock": "100",
+          "quantity": 2
         }
       ]
     }

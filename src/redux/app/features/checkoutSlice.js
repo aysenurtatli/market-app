@@ -7,7 +7,18 @@ export const completeSale = createAsyncThunk('checkout/completeSale', async (che
         products: checkoutProducts,
     })
         .then((response) => {
-            return response.data;
+            const saleData = response.data;
+            const stockUpdate = checkoutProducts.map((product) => {
+                return axios.patch(`http://localhost:3000/products/${product.id}`, {
+                    stock: product.stock - product.quantity,
+                });
+            });
+
+            return Promise.all(stockUpdate)
+                .then(() => saleData)
+                .catch((error) => {
+                    throw new Error("stock update failed", error.message);
+                })
         })
         .catch((err) => {
             return thunkAPI.rejectWithValue(err.response?.data || err.message);
