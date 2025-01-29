@@ -22,7 +22,9 @@ export const deleteProductAsync = createAsyncThunk('products/deleteProductAsync'
     return axios.delete(`http://localhost:3000/products/${id}`)
         .then(() => id)
         .catch(err => thunkAPI.rejectWithValue(err.response?.data || err.message))
-})
+});
+
+
 
 
 

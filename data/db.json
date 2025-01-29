@@ -2,52 +2,66 @@
   "products": [
     {
       "id": "1",
-      "name": "Çikolata",
-      "price": "25",
-      "description": "çikolata",
-      "stock": 52
+      "name": "Makarna",
+      "price": "12",
+      "description": "makarna",
+      "stock": 97
     },
     {
       "id": "2",
-      "name": "Gofret",
-      "price": "40",
-      "description": "gofret",
-      "stock": "20"
+      "name": "Cips",
+      "price": "45",
+      "description": "cips",
+      "stock": "50"
     },
     {
       "id": "3",
       "name": "Peynir",
-      "price": "500",
+      "price": "400",
       "description": "peynir",
-      "stock": "10"
+      "stock": "15"
     },
     {
       "id": "4",
-      "name": "Süt",
-      "price": "45",
-      "description": "süt",
-      "stock": "30"
+      "name": "Yumurta",
+      "price": "140",
+      "description": "yumurta",
+      "stock": "20"
     },
     {
       "id": "5",
-      "name": "ekmek",
-      "price": "10",
+      "name": "Ekmek",
+      "price": "20",
       "description": "ekmek",
-      "stock": 98
+      "stock": "300"
     },
     {
       "id": "6",
-      "name": "Yumurta",
-      "price": "150",
-      "description": "beyaz yumurta",
-      "stock": 49
+      "name": "Köfte",
+      "price": "200",
+      "description": "köfte",
+      "stock": "5"
     },
     {
       "id": "7",
       "name": "Sucuk",
       "price": "400",
       "description": "sucuk",
-      "stock": 39
+      "stock": "30"
+    },
+    {
+      "id": "8",
+      "name": "Çikolata",
+      "price": "50",
+      "description": "çikolata",
+      "stock": "30"
+    },
+    {
+      "id": "9",
+      "name": "Kola",
+      "price": "55",
+      "description": "kola",
+      "stock": "60"
     }
   ],
   "users": [
@@ -331,6 +345,124 @@
           "description": "ekmek",
           "stock": "100",
           "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "e45a",
+      "date": "2025-01-27T11:58:48.677Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": 52,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "9884",
+      "date": "2025-01-27T11:58:56.635Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "5c47",
+      "date": "2025-01-27T14:43:06.452Z",
+      "products": [
+        {
+          "id": "2",
+          "name": "Gofret",
+          "price": "40",
+          "description": "gofret",
+          "stock": "20",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "446f",
+      "date": "2025-01-29T07:07:07.432Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": 49,
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Gofret",
+          "price": "40",
+          "description": "gofret",
+          "stock": 18,
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Peynir",
+          "price": "500",
+          "description": "peynir",
+          "stock": "10",
+          "quantity": 1
+        },
+        {
+          "id": "4",
+          "name": "Süt",
+          "price": "45",
+          "description": "süt",
+          "stock": "30",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "ekmek",
+          "price": "10",
+          "description": "ekmek",
+          "stock": 98,
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "Yumurta",
+          "price": "150",
+          "description": "beyaz yumurta",
+          "stock": 49,
+          "quantity": 1
+        },
+        {
+          "id": "7",
+          "name": "Sucuk",
+          "price": "400",
+          "description": "sucuk",
+          "stock": 39,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "07c4",
+      "date": "2025-01-29T09:59:45.686Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Makarna",
+          "price": "12",
+          "description": "makarna",
+          "stock": "100",
+          "quantity": 3
         }
       ]
     }

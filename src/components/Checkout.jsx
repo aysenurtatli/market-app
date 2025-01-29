@@ -19,7 +19,7 @@ function Checkout() {
     }
 
     return (
-        <div className='my-10 shadow-md bg-zinc-100 w-[500px] h-[500px] p-5 rounded-md overflow-scroll '>
+        <div className='my-10 mx-auto shadow-md bg-zinc-100 w-[500px] h-[500px] p-5 rounded-md overflow-scroll '>
             <h2 className='text-4xl text-blue-600'>Checkout</h2>
             {checkoutProducts.length > 0 ? (
                 <div className='my-4 text-zinc-800'>

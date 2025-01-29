@@ -14,7 +14,6 @@ function AddProduct() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const numberId = products.length ? (Number(products[products.length - 1].id) + 1) : 1;
-        console.log(products.length)
         const id = String(numberId)
         const newProduct = { name, price, description, id, stock }
         dispatch(addNewProduct(newProduct));
@@ -23,6 +22,7 @@ function AddProduct() {
         setPrice('');
         setDescription('')
     }
+
 
     return (
         <div className='container m-auto h-[90vh] flex items-center justify-center'>
