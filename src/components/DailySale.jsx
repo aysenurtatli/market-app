@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { ImMenu3 } from "react-icons/im";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
+import { ImMenu4 } from "react-icons/im";
 function DailySale({ sales }) {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -84,7 +86,7 @@ function DailySale({ sales }) {
                 <div className='flex items-center gap-5 bg-blue-700 rounded-sm p-3 my-4 justify-between'>
                     <h2 className='font-bold text-xl text-white'>Most Saled Products</h2>
                     <button className='inline-flex' onClick={() => setIsOpen(!isOpen)}>
-                        <ImMenu3 size={30} className='text-white' />
+                        {isOpen ? <IoIosArrowUp size={30} className='text-white' /> : <IoIosArrowDown size={30} className='text-white' />}
                     </button>
                 </div>
                 <table className={`${isOpen ? 'block' : 'hidden'}  table-auto bg-white rounded-sm my-4 p-3`}>
