@@ -2,66 +2,53 @@
   "products": [
     {
       "id": "1",
-      "name": "Makarna",
-      "price": "12",
-      "description": "makarna",
-      "stock": 97
+      "name": "Çikolata",
+      "price": "15",
+      "description": "Ülker Çikolata 50 gr",
+      "stock": 59,
+      "brand": "Ülker"
     },
     {
       "id": "2",
-      "name": "Cips",
-      "price": "45",
-      "description": "cips",
-      "stock": "50"
+      "name": "Gofret",
+      "price": "32",
+      "description": "Ülker Hoşbeş gofret",
+      "stock": 24,
+      "brand": "Ülker"
     },
     {
       "id": "3",
-      "name": "Peynir",
-      "price": "400",
-      "description": "peynir",
-      "stock": "15"
+      "name": "Kola",
+      "price": "55",
+      "description": "1 Lt kola",
+      "stock": 76,
+      "brand": "Coca Cola"
     },
     {
       "id": "4",
-      "name": "Yumurta",
-      "price": "140",
-      "description": "yumurta",
-      "stock": "20"
-    },
-    {
-      "id": "5",
-      "name": "Ekmek",
-      "price": "20",
-      "description": "ekmek",
-      "stock": "300"
-    },
-    {
-      "id": "6",
-      "name": "Köfte",
-      "price": "200",
-      "description": "köfte",
-      "stock": "5"
-    },
-    {
-      "id": "7",
-      "name": "Sucuk",
-      "price": "400",
-      "description": "sucuk",
-      "stock": "30"
-    },
-    {
-      "id": "8",
-      "name": "Çikolata",
-      "price": "50",
-      "description": "çikolata",
-      "stock": "30"
-    },
-    {
-      "id": "9",
       "name": "Kola",
-      "price": "55",
-      "description": "kola",
-      "stock": "60"
+      "price": "",
+      "description": "Pepsi kola",
+      "stock": "33",
+      "brand": "Pepsi"
+    }
+  ],
+  "brands": [
+    {
+      "id": "5c87",
+      "name": "Coca Cola"
+    },
+    {
+      "id": "92e3",
+      "name": "Ülker"
+    },
+    {
+      "id": "791a",
+      "name": "Eti"
+    },
+    {
+      "id": "5acd",
+      "name": "Pepsi"
     }
   ],
   "users": [
@@ -463,6 +450,39 @@
           "description": "makarna",
           "stock": "100",
           "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "a6ba",
+      "date": "2025-01-30T14:19:41.526Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "15",
+          "description": "Ülker Çikolata 50 gr",
+          "stock": "60",
+          "brand": "Ülker",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Gofret",
+          "price": "32",
+          "description": "Ülker Hoşbeş gofret",
+          "stock": "25",
+          "brand": "Ülker",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Kola",
+          "price": "55",
+          "description": "1 Lt kola",
+          "stock": "77",
+          "brand": "Coca Cola",
+          "quantity": 1
         }
       ]
     }

@@ -89,7 +89,7 @@ function DailySale({ sales }) {
                         {isOpen ? <IoIosArrowUp size={30} className='text-white' /> : <IoIosArrowDown size={30} className='text-white' />}
                     </button>
                 </div>
-                <table className={`${isOpen ? 'block' : 'hidden'}  table-auto bg-white rounded-sm my-4 p-3`}>
+                <table className={`${isOpen ? 'block' : 'hidden'}  table-auto bg-white rounded-sm my-4 p-3 `}>
                     <thead>
                         <tr>
                             <th>Product Name</th>

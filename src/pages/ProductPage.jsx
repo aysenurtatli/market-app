@@ -1,16 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteProductAsync, fetchProductsAsync } from '../redux/app/features/productSlice';
-import { IoClose } from "react-icons/io5";
 import Barcode from 'react-barcode';
+import { IoClose } from 'react-icons/io5';
+import { fetchBrandsAsync } from '../redux/app/features/brandThunks';
 
-function ProductPage({ product }) {
+
+function ProductPage() {
     const [searchTerm, setSearchTerm] = useState("");
+    const [searchBrand, setSearchBrand] = useState("");
     const dispatch = useDispatch();
+    const { brands } = useSelector((state) => state.brands)
     const { products } = useSelector((state) => state.products);
 
     useEffect(() => {
         dispatch(fetchProductsAsync());
+    }, [dispatch])
+
+    useEffect(() => {
+        dispatch(fetchBrandsAsync());
     }, [dispatch])
 
 
@@ -18,59 +26,77 @@ function ProductPage({ product }) {
         dispatch(deleteProductAsync(id))
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const updateData = {
-            name,
-            price,
-            stock
-        };
-
-        dispatch(updateProductAsync({ id: product.id, updateData }))
-            .then(() => {
-                alert('product updated')
-            })
-            .catch((err) => {
-                console.error('failed', err)
-            });
-    }
-
     const handleSearch = (e) => {
         setSearchTerm(e.target.value.toLowerCase());
     };
 
+    const handleBrandSearch = (e) => {
+        setSearchBrand(e.target.value)
+    }
+
+    const uniqueBrands = [...new Set(brands.map(brand => brand.name))];
+
     const filteredProducts = products.filter((product) =>
-        product.name.toLowerCase().includes(searchTerm)
+        product.name.toLowerCase().includes(searchTerm) &&
+        (searchBrand === "" || product.brand === searchBrand)
     );
 
 
     return (
         <div className="container mx-auto">
-            <h3 className="text-3xl my-5">Products</h3>
-            <input
-                type="text"
-                placeholder="Search products..."
-                value={searchTerm}
-                onChange={handleSearch}
-                className="border border-gray-300 rounded-md p-2 w-full mb-4 focus:outline-none "
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {filteredProducts.length > 0 ? (
-                    filteredProducts.map((product) => (
-                        <div key={product.id} className="bg-gray-100 p-4 rounded-lg shadow-md">
-                            <Barcode value={product.id}></Barcode>
-                            <h4 className="text-xl font-bold">{product.name}</h4>
-                            <p className='text-xl font-semibold  bg-green-300 text-green-900   h-10 flex items-center px-2 rounded-sm'>Price: {product.price}₺</p>
-                            <p className="text-gray-700">Stock: {product.stock}</p>
-                            <p className='text-lg'>{product.description}</p>
-                            <div className='text-white flex items-center justify-center float-right bg-zinc-300 w-[50px] h-10 cursor-pointer rounded-md hover:bg-zinc-400 duration-200' onClick={() => handleDelete(product.id)}><IoClose /></div>
-                        </div>
-                    ))
-                ) : (
-                    <p className="text-gray-500 col-span-full">
-                        No products match your search.
-                    </p>
-                )}
+            <div className='sticky top-10 z-10 mb-6 p-2 rounded-md'>
+                <input
+                    type="text"
+                    placeholder="Search products..."
+                    value={searchTerm}
+                    onChange={handleSearch}
+                    className="border border-gray-300 rounded-md p-2 w-full focus:outline-none shadow-md"
+                />
+                <select value={searchBrand} onChange={handleBrandSearch} className='border border-gray-300 rounded-md p-2 w-full focus:outline-none shadow-md my-2 text-gray-400'>
+                    <option value="">All Brands</option>
+                    {uniqueBrands.map((brand) => (
+                        <option value={brand} key={brand}>{brand}</option>
+                    ))}
+                </select>
+            </div>
+            <div className="overflow-x-auto mt-8">
+                <table className='min-w-full bg-white rounded-md p-2 w-full mb-4'>
+                    <thead>
+                        <tr className='bg-blue-200 text-blue-800'>
+                            <th>Barcode</th>
+                            <th>Brand</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {filteredProducts.length > 0 ? (
+                            filteredProducts.map((product) => (
+                                <tr key={product.id} className='border-t'>
+                                    <td className='py-2 px-4 border'><Barcode value={product.id} /></td>
+                                    <td className='py-2 px-4 border'>{product.brand}</td>
+                                    <td className='py-2 px-4 border'>{product.name}</td>
+                                    <td className='py-2 px-4 border'>{product.price}</td>
+                                    <td className='py-2 px-4 border'>{product.stock}</td>
+                                    <td className='py-2 px-4 border'>{product.description}</td>
+                                    <td className='py-2 px-4 border text-center'>
+                                        <button onClick={() => handleDelete(product.id)}>
+                                            <IoClose size={30} className='text-red-600' />
+                                        </button>
+                                    </td>
+
+                                </tr>
+                            ))
+                        ) : (
+                            <tr>
+                                <td colSpan={6}>No products match your search</td>
+                            </tr>
+                        )}
+                    </tbody>
+                </table>
             </div>
         </div>
     );

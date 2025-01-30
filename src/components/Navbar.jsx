@@ -29,6 +29,7 @@ function Navbar() {
                 <ul className='font-medium flex flex-col gap-3 md:gap-0 p-4 md:p-0 mt-4 rounded-lg   md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 '>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/products">Products</Link></li>
+                    <li><Link to="/brands">Brands</Link></li>
                     <li><Link to="/addproduct">Add Product</Link></li>
                     <li><Link to="/sales">Sales</Link></li>
                     <button onClick={handleLogout} className='bg-blue-600 rounded-md w-16 text-white'>Logout</button>
