@@ -3,34 +3,11 @@
     {
       "id": "1",
       "name": "Çikolata",
-      "price": "15",
-      "description": "Ülker Çikolata 50 gr",
-      "stock": 59,
-      "brand": "Ülker"
-    },
-    {
-      "id": "2",
-      "name": "Gofret",
-      "price": "32",
-      "description": "Ülker Hoşbeş gofret",
-      "stock": 24,
-      "brand": "Ülker"
-    },
-    {
-      "id": "3",
-      "name": "Kola",
-      "price": "55",
-      "description": "1 Lt kola",
-      "stock": 76,
-      "brand": "Coca Cola"
-    },
-    {
-      "id": "4",
-      "name": "Kola",
-      "price": "",
-      "description": "Pepsi kola",
-      "stock": "33",
-      "brand": "Pepsi"
+      "price": "25",
+      "description": "çikolata",
+      "stock": "60",
+      "brand": "Eti",
+      "category": "Temel Gıda"
     }
   ],
   "brands": [
@@ -49,6 +26,28 @@
     {
       "id": "5acd",
       "name": "Pepsi"
+    }
+  ],
+  "categories": [
+    {
+      "id": "b5b2",
+      "name": "Temel Gıda",
+      "kdv": "0.01"
+    },
+    {
+      "id": "eb17",
+      "name": "Meşrubat",
+      "kdv": "0.10"
+    },
+    {
+      "id": "090a",
+      "name": "Temizlik",
+      "kdv": "0.20"
+    },
+    {
+      "id": "28f7",
+      "name": "Tekel",
+      "kdv": "0"
     }
   ],
   "users": [
@@ -483,6 +482,84 @@
           "stock": "77",
           "brand": "Coca Cola",
           "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "971e",
+      "date": "2025-01-31T08:45:41.117Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "kola",
+          "price": "45",
+          "description": "kola",
+          "stock": "60",
+          "brand": "Coca Cola",
+          "category": "Meşrubat",
+          "quantity": 2
+        },
+        {
+          "id": "2",
+          "name": "Çikolata",
+          "price": "22",
+          "description": "çikolata 50 gr",
+          "stock": "78",
+          "brand": "Eti",
+          "category": "Temel Gıda",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Gofret",
+          "price": "30",
+          "description": "eti hoşbeş",
+          "stock": "25",
+          "brand": "Eti",
+          "category": "Temel Gıda",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "a068",
+      "date": "2025-02-02T16:19:42.363Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": "66",
+          "brand": "Ülker",
+          "category": "Temel Gıda",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "a728",
+      "date": "2025-02-02T16:21:48.297Z",
+      "products": [
+        {
+          "id": "2",
+          "name": "kola",
+          "price": "55",
+          "description": "",
+          "stock": "30",
+          "brand": "Pepsi",
+          "category": "Meşrubat",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": 65,
+          "brand": "Ülker",
+          "category": "Temel Gıda",
+          "quantity": 4
         }
       ]
     }

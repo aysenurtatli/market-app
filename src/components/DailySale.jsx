@@ -78,7 +78,6 @@ function DailySale({ sales }) {
 
     const sortedProducts = products.sort((a, b) => b.quantity - a.quantity)
     const top5Products = sortedProducts.slice(0, 5)
-    console.log(sortedProducts)
 
     return (
         <div>

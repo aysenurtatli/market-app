@@ -4,6 +4,7 @@ import { deleteProductAsync, fetchProductsAsync } from '../redux/app/features/pr
 import Barcode from 'react-barcode';
 import { IoClose } from 'react-icons/io5';
 import { fetchBrandsAsync } from '../redux/app/features/brandThunks';
+import { fetchCategoriesAsync } from '../redux/app/features/categoriesThunk';
 
 
 function ProductPage() {
@@ -12,6 +13,7 @@ function ProductPage() {
     const dispatch = useDispatch();
     const { brands } = useSelector((state) => state.brands)
     const { products } = useSelector((state) => state.products);
+    const { categories } = useSelector((state) => state.categories);
 
     useEffect(() => {
         dispatch(fetchProductsAsync());
@@ -19,6 +21,10 @@ function ProductPage() {
 
     useEffect(() => {
         dispatch(fetchBrandsAsync());
+    }, [dispatch])
+
+    useEffect(() => {
+        dispatch(fetchCategoriesAsync())
     }, [dispatch])
 
 
@@ -69,6 +75,7 @@ function ProductPage() {
                             <th>Price</th>
                             <th>Stock</th>
                             <th>Description</th>
+                            <th>Category</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -79,9 +86,10 @@ function ProductPage() {
                                     <td className='py-2 px-4 border'><Barcode value={product.id} /></td>
                                     <td className='py-2 px-4 border'>{product.brand}</td>
                                     <td className='py-2 px-4 border'>{product.name}</td>
-                                    <td className='py-2 px-4 border'>{product.price}</td>
+                                    <td className='py-2 px-4 border'>{product.price} ₺</td>
                                     <td className='py-2 px-4 border'>{product.stock}</td>
                                     <td className='py-2 px-4 border'>{product.description}</td>
+                                    <td className='py-2 px-4 border'>{product.category}</td>
                                     <td className='py-2 px-4 border text-center'>
                                         <button onClick={() => handleDelete(product.id)}>
                                             <IoClose size={30} className='text-red-600' />

@@ -14,6 +14,7 @@ function Sales() {
     }, []);
 
 
+
     return (
         <div className='container mx-auto'>
             <h3 className='text-3xl my-5'>Daily Sales</h3>
