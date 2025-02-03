@@ -10,6 +10,7 @@ import { login } from './redux/app/features/loginSlice'
 import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
 import Brands from './pages/Brands'
+import Categories from './pages/Categories'
 
 function App() {
   const dispatch = useDispatch()
@@ -31,6 +32,7 @@ function App() {
         <Route path='/sales' element={isLoggedIn ? <Sales /> : <Navigate to="/login" />}></Route>
         <Route path='/products' element={isLoggedIn ? <ProductPage /> : <Navigate to="/login" />} />
         <Route path='/brands' element={isLoggedIn ? <Brands /> : <Navigate to="/login" />} />
+        <Route path='/categories' element={isLoggedIn ? <Categories /> : <Navigate to="/login" />} />
         <Route path='/addproduct' element={isLoggedIn ? <AddProduct /> : <Navigate to="/login" />} />
       </Routes>
     </>

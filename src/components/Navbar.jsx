@@ -30,6 +30,7 @@ function Navbar() {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/products">Products</Link></li>
                     <li><Link to="/brands">Brands</Link></li>
+                    <li><Link to="/categories">Categories</Link></li>
                     <li><Link to="/addproduct">Add Product</Link></li>
                     <li><Link to="/sales">Sales</Link></li>
                     <button onClick={handleLogout} className='bg-blue-600 rounded-md w-16 text-white'>Logout</button>
