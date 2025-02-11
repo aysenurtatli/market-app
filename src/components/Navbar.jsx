@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { logout } from '../redux/app/features/loginSlice';
+import logo from '../assets/logo.png'
 
 function Navbar() {
     const dispatch = useDispatch();
@@ -13,7 +14,7 @@ function Navbar() {
     }
     return (
         <nav className='flex flex-wrap max-w-screen-2xl items-center justify-between p-5 mx-auto'>
-            <a href='#' className='text-xl font-bold text-blue-600'>Market App</a>
+            <a href='#'><img src={logo} className="w-44" alt="" /></a>
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 type='button'
