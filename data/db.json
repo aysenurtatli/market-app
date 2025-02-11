@@ -5,8 +5,107 @@
       "name": "Çikolata",
       "price": "25",
       "description": "çikolata",
-      "stock": "60",
+      "stock": 57,
       "brand": "Eti",
+      "category": "Temel Gıda"
+    },
+    {
+      "id": "2",
+      "name": "Kola",
+      "price": "55",
+      "description": "kola\n",
+      "stock": 38,
+      "brand": "Coca Cola",
+      "category": "Meşrubat"
+    },
+    {
+      "id": "3",
+      "name": "Gofret",
+      "price": "13",
+      "description": "gofret",
+      "stock": 49,
+      "brand": "Eti",
+      "category": "Temel Gıda"
+    },
+    {
+      "id": "4",
+      "name": "Su",
+      "price": "10",
+      "description": "damla su",
+      "stock": 94,
+      "brand": "Damla",
+      "category": "Meşrubat"
+    },
+    {
+      "id": "5",
+      "name": "Su",
+      "price": "14",
+      "description": "erikli su",
+      "stock": 119,
+      "brand": "Erikli",
+      "category": "Meşrubat"
+    },
+    {
+      "id": "6",
+      "name": "Çekirdek",
+      "price": "45",
+      "description": "çekirdek\n",
+      "stock": 32,
+      "brand": "Tadım",
+      "category": "Temel Gıda"
+    },
+    {
+      "id": "7",
+      "name": "Bolçi Çikolata",
+      "price": "480",
+      "description": "bolçi çikolata",
+      "stock": 2,
+      "brand": "Bolçi",
+      "category": "Temel Gıda"
+    },
+    {
+      "id": "8",
+      "name": "Köfte",
+      "price": "250",
+      "description": "köfte",
+      "stock": "5",
+      "brand": "Pınar",
+      "category": "Temel Gıda"
+    },
+    {
+      "id": "9",
+      "name": "Sucuk",
+      "price": "400",
+      "description": "sucuk",
+      "stock": "30",
+      "brand": "Pınar",
+      "category": "Temel Gıda"
+    },
+    {
+      "id": "10",
+      "name": "Yoğurt",
+      "price": "36",
+      "description": "yoğurt",
+      "stock": "15",
+      "brand": "İçim",
+      "category": "Temel Gıda"
+    },
+    {
+      "id": "11",
+      "name": "Peynir",
+      "price": "500",
+      "description": "peynir",
+      "stock": "40",
+      "brand": "İçim",
+      "category": "Temel Gıda"
+    },
+    {
+      "id": "12",
+      "name": "Kaşar Peyniri",
+      "price": "300",
+      "description": "kaşar peyniri",
+      "stock": "4",
+      "brand": "İçim",
       "category": "Temel Gıda"
     }
   ],
@@ -26,6 +125,34 @@
     {
       "id": "5acd",
       "name": "Pepsi"
+    },
+    {
+      "id": "8911",
+      "name": "Filiz"
+    },
+    {
+      "id": "5e8d",
+      "name": "Damla"
+    },
+    {
+      "id": "aa11",
+      "name": "Erikli"
+    },
+    {
+      "id": "58fc",
+      "name": "Tadım"
+    },
+    {
+      "id": "b63a",
+      "name": "Bolçi"
+    },
+    {
+      "id": "b114",
+      "name": "İçim"
+    },
+    {
+      "id": "d123",
+      "name": "Pınar"
     }
   ],
   "categories": [
@@ -54,6 +181,11 @@
     {
       "id": "1",
       "email": "admin@example.com",
+      "password": "1234"
+    },
+    {
+      "id": "3116",
+      "email": "admin2@example.com",
       "password": "1234"
     }
   ],
@@ -560,6 +692,98 @@
           "brand": "Ülker",
           "category": "Temel Gıda",
           "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "5415",
+      "date": "2025-02-03T09:16:25.118Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": "60",
+          "brand": "Eti",
+          "category": "Temel Gıda",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "34c9",
+      "date": "2025-02-03T13:49:37.858Z",
+      "products": [
+        {
+          "id": "1",
+          "name": "Çikolata",
+          "price": "25",
+          "description": "çikolata",
+          "stock": 58,
+          "brand": "Eti",
+          "category": "Temel Gıda",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Kola",
+          "price": "55",
+          "description": "kola\n",
+          "stock": "40",
+          "brand": "Coca Cola",
+          "category": "Meşrubat",
+          "quantity": 2
+        },
+        {
+          "id": "3",
+          "name": "Gofret",
+          "price": "13",
+          "description": "gofret",
+          "stock": "55",
+          "brand": "Eti",
+          "category": "Temel Gıda",
+          "quantity": 6
+        },
+        {
+          "id": "4",
+          "name": "Su",
+          "price": "10",
+          "description": "damla su",
+          "stock": "100",
+          "brand": "Damla",
+          "category": "Meşrubat",
+          "quantity": 6
+        },
+        {
+          "id": "5",
+          "name": "Su",
+          "price": "14",
+          "description": "erikli su",
+          "stock": "125",
+          "brand": "Erikli",
+          "category": "Meşrubat",
+          "quantity": 6
+        },
+        {
+          "id": "6",
+          "name": "Çekirdek",
+          "price": "45",
+          "description": "çekirdek\n",
+          "stock": "36",
+          "brand": "Tadım",
+          "category": "Temel Gıda",
+          "quantity": 4
+        },
+        {
+          "id": "7",
+          "name": "Bolçi Çikolata",
+          "price": "480",
+          "description": "bolçi çikolata",
+          "stock": "3",
+          "brand": "Bolçi",
+          "category": "Temel Gıda",
+          "quantity": 1
         }
       ]
     }

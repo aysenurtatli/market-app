@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import { login } from '../redux/app/features/loginSlice'
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function LoginPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('')
+    const [error, setError] = useState('');
+    const [isRegisterOpen, setIsRegisterOpen] = useState(false);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -61,7 +63,10 @@ function LoginPage() {
                     {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
                     <button
                         type='submit'
-                        className='bg-blue-700 w-full rounded-md text-white py-2 px-4'>Login</button>
+                        className='bg-blue-700 w-full rounded-md text-white py-2 px-4'>
+                        Login
+                    </button>
+                    <span className='mt-6 block'>You don't have an account ? <Link to="/register" className='text-blue-700 font-medium hover:underline'>Register</Link></span>
                 </form>
             </div>
         </div>

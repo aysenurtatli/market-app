@@ -11,6 +11,7 @@ import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
 import Brands from './pages/Brands'
 import Categories from './pages/Categories'
+import Register from './components/Register'
 
 function App() {
   const dispatch = useDispatch()
@@ -34,6 +35,7 @@ function App() {
         <Route path='/brands' element={isLoggedIn ? <Brands /> : <Navigate to="/login" />} />
         <Route path='/categories' element={isLoggedIn ? <Categories /> : <Navigate to="/login" />} />
         <Route path='/addproduct' element={isLoggedIn ? <AddProduct /> : <Navigate to="/login" />} />
+        <Route path='/register' element={<Register />}></Route>
       </Routes>
     </>
   )
