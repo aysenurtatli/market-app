@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
-import { ImMenu4 } from "react-icons/im";
 function DailySale({ sales }) {
 
     const [isOpen, setIsOpen] = useState(false);
-
-
 
     const groupedSales = [];
     for (const sale of sales) {
@@ -107,7 +104,7 @@ function DailySale({ sales }) {
                     </tbody>
                 </table>
             </div>
-            <h2 className='font-bold text-2xl text-blue-700 '>Total: {allTotal} TL</h2>
+            <h2 className='font-bold text-2xl text-blue-700 bg-blue-100 p-3 rounded-sm'>Total: {allTotal} TL</h2>
             {
                 Object.entries(dailySales).map(([date, salesArray]) => (
                     <div key={date} className='border-b border-zinc-400 rounded-sm mb-5 p-3'>

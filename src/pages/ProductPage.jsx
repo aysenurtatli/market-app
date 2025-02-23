@@ -43,7 +43,7 @@ function ProductPage() {
     const uniqueBrands = [...new Set(brands.map(brand => brand.name))];
 
     const filteredProducts = products.filter((product) =>
-        product.name.toLowerCase().includes(searchTerm) &&
+        product.name.toLowerCase().startsWith(searchTerm.trim().toLowerCase()) &&
         (searchBrand === "" || product.brand === searchBrand)
     );
 

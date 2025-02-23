@@ -30,12 +30,14 @@ function Home() {
         }
     }
 
+
+
     return (
-        <div className='container  mx-auto'>
-            <div className='grid sm:grid-cols-1 lg:grid-cols-2'>
+        <div className='container mx-auto my-10'>
+            <div>
                 <div className='mx-auto'>
                     <h2 className='text-3xl text-zinc-600'>Barcode</h2>
-                    <input type="text" className=' shadow-md bg-zinc-100 w-[500px] h-[100px] mt-2 rounded-md focus:outline-none px-3 text-3xl' value={idSearch} onChange={handleInputChange} onKeyDown={handleKeyDown} />
+                    <input type="text" className='border shadow-md w-[500px] h-[100px] mt-2 rounded-md focus:outline-none px-3 text-3xl' value={idSearch} onChange={handleInputChange} onKeyDown={handleKeyDown} />
                     {notFound && (
                         <div className="bg-white h-[100px] flex items-center justify-center text-red-500 font-bold rounded-md text-4xl my-6">{notFound}</div>
                     )}
